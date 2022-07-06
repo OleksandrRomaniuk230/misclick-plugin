@@ -1,6 +1,6 @@
 export default{
     install:(app,options)=>{
-        app.directive("misclick",(el,click)=>{
+        app.directive("misclick",(el,click,vnode)=>{
             const select = this.$el.querySelector(el);
             const active = document.getElementsByClassName(click)[0];
             window.addEventListener("click", (e) => {
